@@ -15,7 +15,7 @@
      right: 0;
      left: 0;
      background: rgba(255, 255, 255, 0.8) url('gglogo.png') no-repeat 25px 50%;
-     background-size: 50%;
+     background-size: contain;
  }
 
  .hdrInfo {
@@ -87,7 +87,7 @@
      margin: 0;
      margin-left: 30px;
      text-align: center;
-     background: transparent url('gray-classic-search-icon.png') no-repeat 2% 50%;
+     background: transparent url('search-icon.png') no-repeat 2% 50%;
      cursor: pointer;
  }
 
@@ -98,7 +98,8 @@
  #controlDiv input[type='text'] {
      border: 1px solid #888;
      width: 100%;
-     margin-bottom: 10px;
+     padding-right: 10px;
+     background: transparent url('search-icon.png') no-repeat 98% 50%;
  }
 
  #controlDiv .locList {

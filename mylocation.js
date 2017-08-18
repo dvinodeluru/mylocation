@@ -114,9 +114,9 @@ var infowindow;
                 $('.locDiv').animate({ marginLeft: '-300px' });
 
                 //Title in information panel
-                $('.infoDiv p.title').html('IKEA ' + storename + '<br />' + country);
+                $('.infoDiv p.title').html(country);
                 //Inforamtion of each store in information panel
-                $('.infoDiv p.info').html('<ul><li>Opening date:</li><li>' + openDate + '</li><li> Square metres:</li><li>' + sqrMetr + ' </li><li> Products:</li><li>' + product + '</li><li>Room settings:</li><li>' + roomsetng + ' </li><li>Real-life homes:</li><li>' + relhome + '</li><li> Cash lanes:</li><li>' + cashlanes + '</li><li> Restaurant seats: </li><li>' + restsets + '</li><li>Co-workers:</li><li> ' + cowrk + '</li><li>Parking space:</li><li> ' + prkspace + '</li></ul>');
+                //$('.infoDiv p.info').html('<ul><li>Opening date:</li><li>' + openDate + '</li><li> Square metres:</li><li>' + sqrMetr + ' </li><li> Products:</li><li>' + product + '</li><li>Room settings:</li><li>' + roomsetng + ' </li><li>Real-life homes:</li><li>' + relhome + '</li><li> Cash lanes:</li><li>' + cashlanes + '</li><li> Restaurant seats: </li><li>' + restsets + '</li><li>Co-workers:</li><li> ' + cowrk + '</li><li>Parking space:</li><li> ' + prkspace + '</li></ul>');
 
             });
         });
