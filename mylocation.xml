@@ -49,4 +49,25 @@
             <longitude>-111.8562643</longitude>
 			<destination>true</destination>
         </mylocation>
+        <mylocation>
+            <country>Australia</country>
+            <content>A bit of content goes here.</content>
+            <latitude>-33.8473567</latitude>
+            <longitude>150.6517954</longitude>
+			<destination>false</destination>
+        </mylocation>
+        <mylocation>
+            <country>Singapore</country>
+            <content>A bit of content goes here.</content>
+            <latitude>1.361416</latitude>
+            <longitude>103.9846276</longitude>
+			<destination>false</destination>
+        </mylocation>
+         <mylocation>
+            <country>China</country>
+            <content>A bit of content goes here.</content>
+            <latitude>23.3959128</latitude>
+            <longitude>113.3057812</longitude>
+			<destination>false</destination>
+        </mylocation>
 </mylocationList>

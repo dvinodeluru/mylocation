@@ -81,12 +81,12 @@ var infowindow;
             $('.new').toggle('hide');
             marker.setIcon('https://www.google.com/mapfiles/marker_green.png');
         }*/
-        (product == 'true') ? marker.setIcon('mark.png') : marker.setIcon('https://www.google.com/mapfiles/marker_green.png');
+        (product == 'true') ? marker.setIcon('mark-on.png') : marker.setIcon('mark-off.png');
         //Header context
         $('.hdrInfo').html('<span>' + countryL + ' countries</span>');
 
         //Sort by alphabetical
-        var mylist = $('#storeList ul');
+        var mylist = $('#locationList ul');
         var listitems = mylist.children('li').get();
 
         listitems.sort(function (a, b) {
@@ -132,7 +132,7 @@ var infowindow;
         // Place the new marker
         var marker = new google.maps.Marker({
             map: map,
-            icon: 'icon-yellow-dot.png',
+            icon: 'mark-on.png',
             position: markerCoords
         }); // end place the new marker
 
@@ -141,7 +141,7 @@ var infowindow;
 
         //AddtoGeoInfo(i, storename, country, openDate, sqrMetr, product, roomsetng, relhome, cashlanes, restsets, cowrk, prkspace);
 
-        html += '<li id="' + i + '" class = "store-list" >IKEA ' + storename + '</li>';
+        html += '<li id="' + i + '" class = "loc-list" >' + storename + '</li>';
         i++;
         
         
@@ -151,11 +151,11 @@ var infowindow;
             infowindow = new google.maps.InfoWindow({ content: infoWin });
             infowindow.open(map, marker);
 
-            $('.storeDiv').animate({ marginLeft: '-300px' });
+            $('.locDiv').animate({ marginLeft: '-300px' });
             //Title in information panel
-            $('.infoDiv p.title').html('<div class="">IKEA ' + storename + '<br />' + country+'<span class="new">New</span></div>');
+            $('.infoDiv p.title').html('<div class=""> ' + country+'<span class="new">New</span></div>');
             //Inforamtion of each store in information panel
-            $('.infoDiv p.info').html('<ul><li>Opening date:</li><li>' + openDate + '</li><li> Square metres:</li><li>' + sqrMetr + ' </li><li> Products:</li><li>' + product + '</li><li>Room settings:</li><li>' + roomsetng + ' </li><li>Real-life homes:</li><li>' + relhome + '</li><li> Cash lanes:</li><li>' + cashlanes + '</li><li> Restaurant seats: </li><li>' + restsets + '</li><li>Co-workers:</li><li> ' + cowrk + '</li><li>Parking space:</li><li> ' + prkspace + '</li></ul>');
+            //$('.infoDiv p.info').html('<ul><li>Opening date:</li><li>' + openDate + '</li><li> Square metres:</li><li>' + sqrMetr + ' </li><li> Products:</li><li>' + product + '</li><li>Room settings:</li><li>' + roomsetng + ' </li><li>Real-life homes:</li><li>' + relhome + '</li><li> Cash lanes:</li><li>' + cashlanes + '</li><li> Restaurant seats: </li><li>' + restsets + '</li><li>Co-workers:</li><li> ' + cowrk + '</li><li>Parking space:</li><li> ' + prkspace + '</li></ul>');
        
         }); // end add event listener
 
@@ -190,9 +190,9 @@ var infowindow;
     $('#searchInput').keyup(function () {
         var valThis = $(this).val().toLowerCase();
         if (valThis == "") {
-            $('#storeList ul > li').show();
+            $('#locationList ul > li').show();
         } else {
-            $('#storeList ul > li').each(function () {
+            $('#locationList ul > li').each(function () {
                 var text = $(this).text().toLowerCase();
                 (text.indexOf(valThis) >= 0) ? $(this).show() : $(this).hide();
             });
@@ -200,7 +200,7 @@ var infowindow;
     });
 
     $('p.alink').click(function () {
-        $('.storeDiv').animate({ marginLeft: "0" });
+        $('.locDiv').animate({ marginLeft: "0" });
         infowindow.close();
     });
 })();
