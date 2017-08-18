@@ -111,7 +111,7 @@ var infowindow;
                         break;
                     }
                 }*/
-                $('.storeDiv').animate({ marginLeft: '-300px' });
+                $('.locDiv').animate({ marginLeft: '-300px' });
 
                 //Title in information panel
                 $('.infoDiv p.title').html('IKEA ' + storename + '<br />' + country);

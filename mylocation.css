@@ -1,124 +1,130 @@
-﻿ html, body, #googleMap
-        {
-            height: 100%;
-            margin: 0px;
-            padding: 0px;
-            font-family: Verdana;
-            font-size:13px;
-        }
-#header
-{   
-    padding: 20px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background:url('logo-interikeasystems.gif') no-repeat 25px 50% ;
-    background-color:rgba(255,255,255, 0.8);
-    background-color:#fff\9;
-    *background-color:#fff;
-}
-.hdrInfo
-{
-    display:inline-block;
-    margin-left:325px;
-}
-    .hdrInfo span
-    {
-        padding:0 10px;
-    }
-        #controlDiv
-        {
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            padding: 15px;
-            width: 285px;
-            height: 285px;
-            overflow:hidden;
-            background-color: rgba(255,255,255,0.9);
-            background-color:#ededed\9;
-        }
-.storeDiv
-{
-    width:585px;
-    overflow:hidden;
-}
-        .listDiv, .infoDiv
-        {
-            float:left; 
-            width:280px;           
-        }
-.infoDiv
-{
-    line-height:20px;
-}
-p.title
-{
-    margin:0;
-    padding-left:20px;
-    font-weight:bold;
-    font-size:14px;
-}
+﻿ html,
+ body,
+ #googleMap {
+     height: 100%;
+     margin: 0px;
+     padding: 0px;
+     font-family: Verdana;
+     font-size: 13px;
+ }
 
-p.info
-{
-    padding: 0 20px;
-    font-size:11px;
-}
-    p.info ul
-    {
-        padding:0;
-        margin:0;
-        list-style:none
-    }
-        p.info ul li
-        {
-            width:50%;
-            display:inline-block;
-        }
-p.alink
-{
-    font-size:11px;
-    padding:0;
-    margin:0;
- margin-left:30px;
-    text-align:center;
-background:transparent url('gray-classic-search-icon.png') no-repeat 2% 50%;
-cursor: pointer;
-}
-p.alink:hover{text-decoration:underline;}
-        #controlDiv input[type='text']
-        {
-            border: 1px solid #888;
-            width: 100%;
-            margin-bottom:10px;
-        }
+ #header {
+     padding: 20px;
+     position: fixed;
+     top: 0;
+     right: 0;
+     left: 0;
+     background: rgba(255, 255, 255, 0.8) url('gglogo.png') no-repeat 25px 50%;
+     background-size: 50%;
+ }
 
-        #controlDiv .storeList
-        {
-            overflow-y: auto;
-            height: 200px;
-            border: 1px solid #e0e0e0;            
-        }
-            #controlDiv .storeList ul
-            {
-                list-style:none;
-                padding:2px;
-                margin:0;
-                line-height:20px;
-            }
-                #controlDiv .storeList ul li
-                {
-                    cursor:pointer;                                        
-                }
-                    #controlDiv .storeList ul li:hover
-                    {
-                        background:#e0e0e0;
-                    }
-        .copy-right
-        {
-            font-size:9px;
-            text-align:right;
-            padding:10px 0;
-            clear:both;
-        }
+ .hdrInfo {
+     display: inline-block;
+     margin-left: 325px;
+ }
+
+ .hdrInfo span {
+     padding: 0 10px;
+     display: inline-block;
+ }
+
+ #controlDiv {
+     position: absolute;
+     bottom: 0;
+     padding: 15px;
+     width: 285px;
+     height: 285px;
+     overflow: hidden;
+     background-color: rgba(255, 255, 255, 0.9);
+ }
+
+ .locDiv {
+     width: 585px;
+     overflow: hidden;
+ }
+ .locDiv::before,
+.locDiv::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+ .listDiv,
+ .infoDiv {
+     float: left;
+     width: 280px;
+ }
+
+ .infoDiv {
+     line-height: 20px;
+ }
+
+ p.title {
+     margin: 0;
+     padding-left: 20px;
+     font-weight: bold;
+     font-size: 14px;
+ }
+
+ p.info {
+     padding: 0 20px;
+     font-size: 11px;
+ }
+
+ p.info ul {
+     padding: 0;
+     margin: 0;
+     list-style: none
+ }
+
+ p.info ul li {
+     width: 50%;
+     display: inline-block;
+ }
+
+ p.alink {
+     font-size: 11px;
+     padding: 0;
+     margin: 0;
+     margin-left: 30px;
+     text-align: center;
+     background: transparent url('gray-classic-search-icon.png') no-repeat 2% 50%;
+     cursor: pointer;
+ }
+
+ p.alink:hover {
+     text-decoration: underline;
+ }
+
+ #controlDiv input[type='text'] {
+     border: 1px solid #888;
+     width: 100%;
+     margin-bottom: 10px;
+ }
+
+ #controlDiv .locList {
+     overflow-y: auto;
+     height: 200px;
+     border: 1px solid #e0e0e0;
+ }
+
+ #controlDiv .locList ul {
+     list-style: none;
+     padding: 2px;
+     margin: 0;
+     line-height: 20px;
+ }
+
+ #controlDiv .locList ul li {
+     cursor: pointer;
+ }
+
+ #controlDiv .locList ul li:hover {
+     background: #e0e0e0;
+ }
+
+ .copy-right {
+     font-size: 9px;
+     text-align: right;
+     padding: 10px 0;
+     clear: both;
+ }

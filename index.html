@@ -1,34 +1,38 @@
 ﻿<!DOCTYPE html>
 <html>
-<link href="mylocation.css" rel="stylesheet" type="text/css" />
-<head>
-    
-</head>
 
-<body>
-    <div id="googleMap"></div>
-    <div id="header">
-        <div class="hdrInfo"></div>
-    </div>
-    <div id="controlDiv">
-        <div class="storeDiv">
-            <div class="listDiv">
-                <input type="text" class="searchInput" placeholder="Search an location list..." id="searchInput" />
-                <div id="locationList" class="storeList">
-                    <!--populating XML list-->
+    <head>
+        <title>My Location Maps API v3</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <link href="mylocation.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+        <div id="googleMap"></div>
+        <div id="header">
+            <div class="hdrInfo"></div>
+        </div>
+        <div id="controlDiv">
+            <div class="locDiv">
+                <div class="listDiv">
+                    <input type="text" class="searchInput" placeholder="Search location list..." id="searchInput" />
+                    <div id="locationList" class="locList">
+                        <!--populating XML list-->
+                    </div>
+                </div>
+                <div class="infoDiv">
+                    <p class="title"></p>
+                    <p class="info"></p>
+                    <p class="alink">back to locatoin list</p>
                 </div>
             </div>
-            <div class="infoDiv">
-                <p class="title"></p>
-                <p class="info"></p>
-                <p class="alink">Search for the locatoin</p>
-            </div>
+            <div class="copy-right">&copy; <a href="www.graphicguru.in" target="_blank">Graphicguru.in</a> </div>
         </div>
-        <div class="copy-right">&copy; <a href="www.graphicguru.in" target="_blank">Graphicguru.in</a> </div>
-    </div>
-	
-	<script src="https://maps.googleapis.com/maps/api/js?sensor=false" > </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" ></script>
-    <script src="mylocation.js"></script>
-</body>
+
+        <script src="https://maps.googleapis.com/maps/api/js?sensor=false">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="mylocation.js"></script>
+    </body>
+
 </html>
