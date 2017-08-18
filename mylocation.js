@@ -114,7 +114,7 @@ var infowindow;
                 $('.locDiv').animate({ marginLeft: '-300px' });
 
                 //Title in information panel
-                $('.infoDiv p.title').html(country);
+                //$('.infoDiv p.title').html(country);
                 //Inforamtion of each store in information panel
                 //$('.infoDiv p.info').html('<ul><li>Opening date:</li><li>' + openDate + '</li><li> Square metres:</li><li>' + sqrMetr + ' </li><li> Products:</li><li>' + product + '</li><li>Room settings:</li><li>' + roomsetng + ' </li><li>Real-life homes:</li><li>' + relhome + '</li><li> Cash lanes:</li><li>' + cashlanes + '</li><li> Restaurant seats: </li><li>' + restsets + '</li><li>Co-workers:</li><li> ' + cowrk + '</li><li>Parking space:</li><li> ' + prkspace + '</li></ul>');
 
@@ -136,7 +136,7 @@ var infowindow;
             position: markerCoords
         }); // end place the new marker
 
-        (product == 'true') ? marker.setIcon('mark-on.png') : marker.setIcon('mark-off.png');
+        (product === 'true') ? marker.setIcon('mark-on.png') : marker.setIcon('mark-off.png');
         gmarkers[i] = marker;
 
         //AddtoGeoInfo(i, storename, country, openDate, sqrMetr, product, roomsetng, relhome, cashlanes, restsets, cowrk, prkspace);
@@ -153,7 +153,7 @@ var infowindow;
 
             $('.locDiv').animate({ marginLeft: '-300px' });
             //Title in information panel
-            //$('.infoDiv p.title').html('<div class=""> ' + country +'<span class="new">New</span></div>');
+            $('.infoDiv p.title').html('<div class=""> ' + country +'<span class="new">New</span></div>');
             //Inforamtion of each store in information panel
             //$('.infoDiv p.info').html('<ul><li>Opening date:</li><li>' + openDate + '</li><li> Square metres:</li><li>' + sqrMetr + ' </li><li> Products:</li><li>' + product + '</li><li>Room settings:</li><li>' + roomsetng + ' </li><li>Real-life homes:</li><li>' + relhome + '</li><li> Cash lanes:</li><li>' + cashlanes + '</li><li> Restaurant seats: </li><li>' + restsets + '</li><li>Co-workers:</li><li> ' + cowrk + '</li><li>Parking space:</li><li> ' + prkspace + '</li></ul>');
        
