@@ -1,56 +1,29 @@
 ﻿<!DOCTYPE html>
 <html>
-<style>
-    html, body, #googleMap
-    {
-        height: 100%;
-        margin: 0px;
-        padding: 0px;
-        font-family: Verdana;
-    }
-
-    #logo
-    {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        padding: 10px;
-        width: 300px;
-        height: 300px;
-        background-color: rgba(255,255,255,0.9);
-    }
-
-    #newPos
-    {
-        position: absolute;
-        left: 50%;
-        margin: 24px 0 0 -130px;
-    }
-
-    #logo input[type='text']
-    {
-        border: 1px solid #888;
-        width: 100%;
-    }
-
-    .copy-right
-    {
-        text-align: right;
-        font-size: 9px;
-        padding: 5px 0;
-    }
-</style>
+<link href="mylocation.css" rel="stylesheet" type="text/css" />
 <head>
     
 </head>
 
 <body>
     <div id="googleMap"></div>
-    <div id="logo">
-        <input type="text" class="serchInput" />
-        <select id="locationList">
-            <option></option>
-        </select>
+    <div id="header">
+        <div class="hdrInfo"></div>
+    </div>
+    <div id="controlDiv">
+        <div class="storeDiv">
+            <div class="listDiv">
+                <input type="text" class="searchInput" placeholder="Search an location list..." id="searchInput" />
+                <div id="locationList" class="storeList">
+                    <!--populating XML list-->
+                </div>
+            </div>
+            <div class="infoDiv">
+                <p class="title"></p>
+                <p class="info"></p>
+                <p class="alink">Search for the locatoin</p>
+            </div>
+        </div>
         <div class="copy-right">&copy; <a href="www.graphicguru.in" target="_blank">Graphicguru.in</a> </div>
     </div>
 	

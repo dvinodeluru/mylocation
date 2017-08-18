@@ -67,7 +67,7 @@ var infowindow;
         //add li's to info div
         $('#locationList').html($(html));
 
-        var openDt = parseInt(openDate[0], 10),
+       /* var openDt = parseInt(openDate[0], 10),
                 openMo = parseInt(openDate[1], 10) + 3,
                 openYr = parseInt(openDate[2], 10);
 
@@ -80,10 +80,10 @@ var infowindow;
         if (nowMo < openMo) {
             $('.new').toggle('hide');
             marker.setIcon('https://www.google.com/mapfiles/marker_green.png');
-        }
-
+        }*/
+        (product == 'true') ? marker.setIcon('mark.png') : marker.setIcon('https://www.google.com/mapfiles/marker_green.png');
         //Header context
-        $('.hdrInfo').html('<span>' + storenameL + ' IKEA store in ' + countryL + ' countries</span> <span><b>NEW! IKEA store openings</b></span> <span>' + '6/8 IKEA Clermont-Ferrand,France</span> <span>21/8 IKEA Zagreb, Croastia</span>');
+        $('.hdrInfo').html('<span>' + countryL + ' countries</span>');
 
         //Sort by alphabetical
         var mylist = $('#storeList ul');
@@ -94,12 +94,12 @@ var infowindow;
         });
 
         //update the sort order
-        $('#storeList ul').empty().append(listitems);
+        $('#locationList ul').empty().append(listitems);
 
        // alert($('#storeList ul > li').length);
 
         //click on list item to hilighligt the marker with information
-        $('#storeList ul > li').each(function () {
+        $('#locationList ul > li').each(function () {
             var $li_id = parseInt($(this).attr("id"));
            // alert($li_id);
             $(this).on('click', function () {
