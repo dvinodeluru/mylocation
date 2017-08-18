@@ -6,7 +6,7 @@
 
 
 var googleMap = document.getElementById("googleMap");
-var myCenter = new google.maps.LatLng(23, 0);//map Longitude and Lattitude    
+var myCenter = new google.maps.LatLng(17.4994889,78.3872775);//map Longitude and Lattitude    
 var markers = [], gmarkers = [], i = 0, html, mylocation, country, content, destination, mylocationL, countryL;
 var locInfo = new Array();
 var infowindow;
