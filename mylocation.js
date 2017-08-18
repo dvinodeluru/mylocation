@@ -81,7 +81,7 @@ var infowindow;
             $('.new').toggle('hide');
             marker.setIcon('https://www.google.com/mapfiles/marker_green.png');
         }*/
-        (product == 'true') ? marker.setIcon('mark-on.png') : marker.setIcon('mark-off.png');
+        
         //Header context
         $('.hdrInfo').html('<span>' + countryL + ' countries</span>');
 
@@ -136,7 +136,7 @@ var infowindow;
             position: markerCoords
         }); // end place the new marker
 
-
+        (product == 'true') ? marker.setIcon('mark-on.png') : marker.setIcon('mark-off.png');
         gmarkers[i] = marker;
 
         //AddtoGeoInfo(i, storename, country, openDate, sqrMetr, product, roomsetng, relhome, cashlanes, restsets, cowrk, prkspace);
