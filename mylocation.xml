@@ -1,73 +1,73 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-    <mylocationList>
-        <mylocation>
-            <country>Delhi</country>
-            <content>A bit of content goes here.</content>
-            <latitude>28.5331881</latitude>
-            <longitude>77.2382649</longitude>
-			<destination>true</destination>
-        </mylocation>
-        <mylocation>
-            <country>Pune</country>
-            <content>A bit of content goes here.</content>
-            <latitude>18.5159878</latitude>
-            <longitude>73.9211176</longitude>
-			<destination>true</destination>
-        </mylocation>
-		<mylocation>
-            <country>Bangalore</country>
-            <content>A bit of content goes here.</content>
-            <latitude>12.9429326</latitude>
-            <longitude>77.562004</longitude>
-			<destination>true</destination>
-        </mylocation>
-		<mylocation>
-            <country>Qatar</country>
-            <content>A bit of content goes here.</content>
-            <latitude>25.283943</latitude>
-            <longitude>51.3719113</longitude>
-			<destination>true</destination>
-        </mylocation>
-		<mylocation>
-            <country>Delft, Netherland</country>
-            <content>A bit of content goes here.</content>
-            <latitude>52.0130194</latitude>
-            <longitude>4.3780564</longitude>
-			<destination>true</destination>
-        </mylocation>
-		<mylocation>
-            <country>Paris, France</country>
-            <content>A bit of content goes here.</content>
-            <latitude>48.8588377</latitude>
-            <longitude>2.2770203</longitude>
-			<destination>true</destination>
-        </mylocation>
-		<mylocation>
-            <country>Salt Lake City</country>
-            <content>A bit of content goes here.</content>
-            <latitude>40.7249746</latitude>
-            <longitude>-111.8562643</longitude>
-			<destination>true</destination>
-        </mylocation>
-        <mylocation>
-            <country>Australia</country>
-            <content>A bit of content goes here.</content>
-            <latitude>-33.8473567</latitude>
-            <longitude>150.6517954</longitude>
-			<destination>false</destination>
-        </mylocation>
-        <mylocation>
-            <country>Singapore</country>
-            <content>A bit of content goes here.</content>
-            <latitude>1.361416</latitude>
-            <longitude>103.9846276</longitude>
-			<destination>false</destination>
-        </mylocation>
-         <mylocation>
-            <country>China</country>
-            <content>A bit of content goes here.</content>
-            <latitude>23.3959128</latitude>
-            <longitude>113.3057812</longitude>
-			<destination>false</destination>
-        </mylocation>
+<mylocationList>
+    <mylocation>
+        <country>Delhi</country>
+        <content>I was here for 9 months working for an e-Learning company. Flash 2D animation for Educational institutions.</content>
+        <latitude>28.5331881</latitude>
+        <longitude>77.2382649</longitude>
+        <destination>true</destination>
+    </mylocation>
+    <mylocation>
+        <country>Pune</country>
+        <content>Contract job for a Service base IT company, Visited few nearst hill stations which are cool place to visit in your lifetime.</content>
+        <latitude>18.5159878</latitude>
+        <longitude>73.9211176</longitude>
+        <destination>true</destination>
+    </mylocation>
+    <mylocation>
+        <country>Bangalore</country>
+        <content>A bit of content goes here.</content>
+        <latitude>12.9429326</latitude>
+        <longitude>77.562004</longitude>
+        <destination>true</destination>
+    </mylocation>
+    <mylocation>
+        <country>Qatar</country>
+        <content>A bit of content goes here.</content>
+        <latitude>25.283943</latitude>
+        <longitude>51.3719113</longitude>
+        <destination>true</destination>
+    </mylocation>
+    <mylocation>
+        <country>Delft, Netherland</country>
+        <content>A bit of content goes here.</content>
+        <latitude>52.0130194</latitude>
+        <longitude>4.3780564</longitude>
+        <destination>true</destination>
+    </mylocation>
+    <mylocation>
+        <country>Paris, France</country>
+        <content>A bit of content goes here.</content>
+        <latitude>48.8588377</latitude>
+        <longitude>2.2770203</longitude>
+        <destination>true</destination>
+    </mylocation>
+    <mylocation>
+        <country>Salt Lake City</country>
+        <content>A bit of content goes here.</content>
+        <latitude>40.7249746</latitude>
+        <longitude>-111.8562643</longitude>
+        <destination>true</destination>
+    </mylocation>
+    <mylocation>
+        <country>Australia</country>
+        <content>A bit of content goes here.</content>
+        <latitude>-33.8473567</latitude>
+        <longitude>150.6517954</longitude>
+        <destination>false</destination>
+    </mylocation>
+    <mylocation>
+        <country>Singapore</country>
+        <content>A bit of content goes here.</content>
+        <latitude>1.361416</latitude>
+        <longitude>103.9846276</longitude>
+        <destination>false</destination>
+    </mylocation>
+    <mylocation>
+        <country>China</country>
+        <content>A bit of content goes here.</content>
+        <latitude>23.3959128</latitude>
+        <longitude>113.3057812</longitude>
+        <destination>false</destination>
+    </mylocation>
 </mylocationList>
